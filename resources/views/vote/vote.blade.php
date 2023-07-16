@@ -1,7 +1,7 @@
-@include('layouts.app')
 
+@extends('layouts.app')
 @section('content')
-<form action="{{ route('vote.cast') }}" method="POST">
+<form action="{{ route('vote.cast') }}" method="POST" class="item-center justify-center p-72">
     @csrf
     <input type="hidden" name="level" value="{{ $level }}">
     <div class="form-group">

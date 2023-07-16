@@ -120,6 +120,7 @@ public function vote(Request $request, $level)
 public function castVote(Request $request)
 {
     // Validate the submitted form data
+    //dd($request);
     $request->validate([
         'candidate_id' => 'required|exists:candidats,id',
     ]);

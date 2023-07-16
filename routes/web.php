@@ -51,4 +51,4 @@ Route::get('/index/electeur',[ElecteurController::class,'index']);
 
 
 Route::get('/vote/{level}', [CandidatController::class, 'vote'])->name('vote');
-Route::get('/castVote', [CandidatController::class, 'castVote'])->name('vote.cast');
+Route::post('/castVote', [CandidatController::class, 'castVote'])->name('vote.cast');
